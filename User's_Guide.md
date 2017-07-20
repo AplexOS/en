@@ -2,17 +2,17 @@
 
 ## Illustration
 
-* Before you read this article, make sure you have read ["SBC-7109S-Linux4.4.12-Qt4.8.5 Quick Start Guide"] (Quick_Start_Guide.md)
+* Before you read this article, make sure you have read ["SBC-7109S-Linux4.4.12-Qt4.8.5 Quick Start Guide"](Quick_Start_Guide.md)
 * If you do not have a Print Circuit board or a corresponding development BSP package, please contact our business people, they will provide you with the relevant hardware, software resources.
 * The virtual machine operations involved in this article are operated on the following conditions:
-  * Ubuntu 12.04 x64 virtual machine built with VMware
-  * Account name: aplex
-  * Password: aplex
-  * The following commands are executed in the VMware Ubuntu 12.04 virtual machine
+  * Ubuntu 12.04 x64 virtual machine built with VMware
+  * Account name: aplex
+  * Password: aplex
+  * The following commands are executed in the VMware Ubuntu 12.04 virtual machine
 * As a reader of this document, we will assume that you already have the following skills:
-  * Familiar with and master the Linux shell command;
-  * Familiar with the Linux ARM cross compiler development process;
-  * Familiar with Qt Creator;
+  * Familiar with and master the Linux shell command;
+  * Familiar with the Linux ARM cross compiler development process;
+  * Familiar with Qt Creator;
 
 ## Setup development environment 
 
@@ -405,4 +405,4 @@ The virtual machine image is stored in the `board-support / VMware-Workstation` 
 
 ## Copyright
 
-All of the above is the final interpretation of all [aplex] (http://www.aplextec.com/cn/home.php) Company.
+All of the above is the final interpretation of all [aplex](http://www.aplextec.com/cn/home.php) Company.
