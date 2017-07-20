@@ -40,7 +40,7 @@ About how to get the BSP package, please contact our service staff.
     │   ├── linux-kernel-source-code    // Linux Kernel source
     │   ├── u-boot-source-code          // U-boot source
     │   ├── qt-source-code              // Qt GUI library source
-    │   └── VMware-Workstation          // Pre-setupped VMWARE virtual machine
+    │   └── VMware-Workstation          // Pre-setup VMWARE virtual machine
     ├── docs                            // User guide and development document
     │   └── README.txt                  // Specified for GitHub BSP documents
     ├── example-applications            // Application examples
