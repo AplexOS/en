@@ -2,7 +2,7 @@
 
 ## Illustration
 
-* If you do not have a Print Circuit board or a corresponding development BSP package, please contact our business people, they will provide you with the relevant hardware, software resources.
+If you do not have a Print Circuit board or a corresponding development BSP package, please contact our business people, they will provide you with the relevant hardware, software resources.
 
 ## Hardware features
 
