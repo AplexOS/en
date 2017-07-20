@@ -32,10 +32,10 @@ About how to get the BSP package, please contact our service staff.
     │   ├── prebuilt-images             // Compiled image and dtb.
     │   │   ├── u-boot.img              // Compiled u-boot.img
     │   │   ├── zImage                  // Compiled zImage
-	|   |   ├── MLO                     // Compiled MLO
-	|   |   ├── uEnv.txt                // SD card configure
-	|   |   ├── uEnv_emmc.txt           // Emmc configure
-	|   │   └── am335x-sbc7109.dtb      // Compiled device tree
+    |   |   ├── MLO                     // Compiled MLO
+    |   |   ├── uEnv.txt                // SD card configure
+    |   |   ├── uEnv_emmc.txt           // Emmc configure
+    |   │   └── am335x-sbc7109.dtb      // Compiled device tree
     │   │        
     │   ├── linux-kernel-source-code    // Linux Kernel source
     │   ├── u-boot-source-code          // U-boot source
@@ -49,7 +49,7 @@ About how to get the BSP package, please contact our service staff.
     │   └── rootfs.tar                  // Comparessed root file system
     └── linux-devkit                    // Development tools
         ├── compiler                    // Compiler
-		└── tools                       // Tools
+        └── tools                       // Tools
 
 ```
 
