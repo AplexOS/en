@@ -1,60 +1,61 @@
 # SBC-7109S-Linux4.4.12-Qt4.8.5 Quick Start Guide
 
-## 一、说明
+## Illustration
 
-如果您还没有硬件主板或者对应的开发BSP包，请跟我们的业务人员联系，他们将会向您提供相关硬件、软件资源。
+* If you do not have a Print Circuit board or a corresponding development BSP package, please contact our business people, they will provide you with the relevant hardware, software resources.
 
-## 二、主板硬件信息
+## Hardware features
 
 ![SBC-7109SBoard.png](img/SBC-7109SBoard.png)
 
-* 9-24V电源输入；
-* 2路USB 2.0 A接口；
-* 2路10/100M网口；
-* 1路RS232/RS485/RS422接口；
-* 1路microSD（TF）卡接口；
-* 1路LVDS接口：
-* 1路LCD接口
-* 1路Audio
+* 9-24V power input
+* Two USB 2.0 Type A Host ports
+* Two 10/100M RJ45 LAN ports
+* One software selectable RS232/RS485/RS422 serial port by DB9 connector
+* One microSD (TF) card socket
+* One LVDS LCD interface
+* One RGB TTL LCD interface
+* One Audio codec with Line in, Line out and Microphone in
 
-## 三、主板软件桌面
+## Application of desktop
 
 ![SBC-7109SBoardDesktop.png](img/SBC-7109SBoardDesktop.png)
 
-* Browser：浏览器；
-* Touch：触摸屏矫正软件；
-* Test：主板硬件测试软件；
-* Performance：性能测试软件；
-* SD卡烧入系统的时候桌面另外包含一个BurnSystem 软件；
+* Browser：Web Browser；
+* Touch：Resistive touch calibration
+* Test：For peripheral test
+* Performance：Performance test
+* If boot frome SD CARD, the desktop will add one BurnSystem application for burn system image into eMMC
 
-## 四、烧录系统
+## Program the software image
 
-**以下操作均是以您从业务人员获取到的BSP包的目录为根目录进行操作，PC机操作系统环境是Ubuntu12.04。**
+**The following operations are based on the directory from our BSP package for the operation, the PC operating system environment is Ubuntu12.04 x64**
 
-### 4.1 烧录系统步骤
+### Step by step to program the soaftware image
 
-* 4.1.1 制作SD卡启动系统
-	* 将BSP包中的 linux-devkit/tools/mksd.sh 放到你的Ubuntu 系统中。
-	* 插入你的SD卡并在普通用户下运行该脚本，带一个SD卡块设备节点，如/dev/sdb
-	* 步骤如下：
-		* ./mksd.sh  /dev/sdb          
-		* 输入你的root密码
-		* 等待所有操作执行完毕，提示 ： make sd card partition over ....
-	* 重新拔出SD卡并再次插入，等待系统检测到SD卡的两个分区。
-	* 将 board-support/prebuilt-images 文件夹内的所有文件拷入SD卡boot分区。
-	* 将 filesystem 文件夹内的rootfs.tar 解压到SD卡的rootfs分区。		
-		* 并在最后运行如下两条命令：
-		* sync
-		* 在 `ubuntu 12.04`中使用`sudo umount /media/*`卸载SD卡。 
-		* 在 `Ubuntu 14.04`以及更高的版本中使用`sudo umount /media/$(whoami)/*`卸载SD卡。		
-		* 拔出SD卡；
-* 4.1.2 启动SD卡系统后烧到系统到emmc
-	* 将SD卡插入主板SD卡槽，上电启动。
-	* 点击桌面的BurnSystem 软件，在点击Start 按钮。
-	* 根据最后显示的提示：Burn the new system over... , 然后关闭软件，关闭电源，拔出SD卡。
-	* 重新上电，即可启动emmc 系统。
+* Create SD boot
+  * Copy the 'Linux-devkit/tools/mksd.sh' file in the BSP package into your Ubuntu system.
+  * Insert your SD card and run above script under normal user, with an SD card block device node, such as /dev/sdb
+  * Proceed as follows:
+    * ./mksd.sh /dev/sdb
+    * Enter your root password
+    * Wait for all operations to complete, suggesting: make sd card partition over ...
+  * Unplug the SD card and insert it again, waiting for the system to detect the SD card's two partitions.
+  * Copy all files in the board-support/prebuilt-images folder into the SD card boot partition.
+  * Unzip the rootfs.tar in the filesystem folder into the rootfs partition of the SD card.
+    * And at the end run the following two commands:
+    * Sync
+    * Use `sudo umount /media/*` to unmount SD card in `ubuntu 12.04`.
+    * Use `sudo umount /media/$(whoami)/*` to unmount the SD card in `Ubuntu 14.04` and later version.
+    * Pull out the SD card;
+
+* Boot system by SD card then download image into eMMC
+  * Insert the SD card was created by above steps, power on the system
+  * Click on BurnSystem application, then click Start buttom
+  * Waiting the screen show：Burn the new system over... , then turn off power, unplug SD card
+  * Power on again to boot the system by eMMC
 
 
-## 五、版权说明
+## Copyright
 
-以上所有内容最终解释权归[aplex](http://www.aplextec.com/cn/home.php)公司所有。
+All of the above interpretation is belong to [Aplex](http://www.aplextec.com/cn/home.php).
