@@ -16,8 +16,8 @@
 
 ## Setup development environment 
 
-* Using VMware to install: ** Ubuntu 12.04 64-bit system **.
-If you do not have an Ubuntu 12.04 image, use the `board-support / VMware-Workstation / ubuntu-12.04-desktop-amd64.iso` image in the BSP package.
+* Using VMware to install: ** Ubuntu 12.04 64-bit system **.  
+If you do not have an Ubuntu 12.04 image, use the `board-support/VMware-Workstation/ubuntu-12.04-desktop-amd64.iso` image in the BSP package.
 * Install the package, if there is an error, please execute `sudo apt-get update` to continue:
 ```shell
     sudo apt-get update
@@ -37,9 +37,9 @@ If you do not have an Ubuntu 12.04 image, use the `board-support / VMware-Workst
     sudo apt-get install libglib2.0-dev
     sudo apt-get install tree
     sudo apt-get install appmenu-gtk:i386
-    sudo apt-get install ia32-libs                  # 由于是64位系统的原因
-    sudo apt-get install libc6-dev-i386             # 由于是64位系统的原因
-    sudo apt-get install autoconf automake libtool  # 编译tslib时要用到
+    sudo apt-get install ia32-libs                  # because of 64bit Ubuntu system
+    sudo apt-get install libc6-dev-i386             # because of 64bit Ubuntu system
+    sudo apt-get install autoconf automake libtool  # compile tslib will use it
 ```
 * Create aplex directory in the aplex user directory, all of which are manipulated in that directory:
   * `cd ~`
@@ -117,6 +117,7 @@ If you do not have an Ubuntu 12.04 image, use the `board-support / VMware-Workst
 * Add uboot path into system 
 ```shell
     aplex@aplex:~$ cat .bashrc 
+    ...
     export UBOOT_PATH=/home/aplex/aplex/board-support/u-boot-source-code/u-boot_2016.05
 ```
 
@@ -405,4 +406,4 @@ The virtual machine image is stored in the `board-support / VMware-Workstation` 
 
 ## Copyright
 
-All of the above is the final interpretation of all [aplex](http://www.aplextec.com/cn/home.php) Company.
+All of the above interpretation is belong to [Aplex](http://www.aplextec.com/cn/home.php) Company.
