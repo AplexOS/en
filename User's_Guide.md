@@ -16,7 +16,7 @@
 
 ## Setup development environment 
 
-* Using VMware to install: ** Ubuntu 12.04 64-bit system **.  
+* Using VMware to install: **Ubuntu 12.04 64-bit system**.  
 If you do not have an Ubuntu 12.04 image, use the `board-support/VMware-Workstation/ubuntu-12.04-desktop-amd64.iso` image in the BSP package.
 * Install the package, if there is an error, please execute `sudo apt-get update` to continue:
 ```shell
@@ -261,7 +261,7 @@ Create folder for Qt source code `board-support/qt-source-code`，and then copy 
     QMAKE_LIBS_OPENGL_ES1 = -lGLES_CM
     QMAKE_LIBS_OPENGL_ES2 = -lGLESv2
     QMAKE_LIBS_OPENVG     = -lOpenVG
-    QMAKE_LIBS_THREAD     = -lpthread -lts     # <---- 修改这一行内容
+    QMAKE_LIBS_THREAD     = -lpthread -lts     # <---- modify this line
 
     QMAKE_CFLAGS_WAYLAND =
     QMAKE_INCDIR_WAYLAND =
