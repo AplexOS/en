@@ -43,8 +43,8 @@ If you do not have a Print Circuit board or a corresponding development BSP pack
   * Unplug the SD card and insert it again, waiting for the system to detect the SD card's two partitions.
   * Copy all files in the board-support/prebuilt-images folder into the SD card boot partition.
   * Unzip the rootfs.tar in the filesystem folder into the rootfs partition of the SD card.
-    * And at the end run the following two commands:
-    * Use `sync` to synchronous data.
+    * And at the end run the following two commands.
+    * Use `sync` to synchronous data.
     * Use `sudo umount /media/*` to unmount SD card in `ubuntu 12.04`.
     * Use `sudo umount /media/$(whoami)/*` to unmount the SD card in `Ubuntu 14.04` and later version.
     * Pull out the SD card;
